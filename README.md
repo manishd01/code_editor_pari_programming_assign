@@ -24,10 +24,10 @@ requirements.txt
 
 frontend/ (optional)
 src/
-App.jsx
-Editor.jsx
-api.js
-index.js
+App.tsx
+Editor.tsx
+store/
+api.ts
 
 ## Setup Instructions
 
@@ -42,7 +42,9 @@ index.js
    cd frontend
    npm install
    npm start
-3: setup postgre database credentials- (create .envfile in both folders)
+
+3. setup postgre database credentials
+   - (create .envfile in both folders)
 
 ## Access
 
