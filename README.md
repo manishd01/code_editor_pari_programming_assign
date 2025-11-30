@@ -1,52 +1,64 @@
-## Project Summary
+# README
 
-This project is a simplified real-time pair-programming prototype built using:
+## 1. Project Summary
 
-Backend: Python, FastAPI, WebSockets
-Frontend: React + TypeScript (optional)
+This project is a simplified **real-time pair-programming prototype**
+built using:
 
-Basic Features:
+-   **Backend:** Python, FastAPI, WebSockets\
+-   **Frontend (optional):** React + TypeScript
 
-- Create or join rooms for collaborative coding
-- Real-time code sync using WebSockets
-- Mock AI autocomplete via POST /autocomplete
+### Basic Features
 
-## Directory Structure
+1.  Create or join rooms for collaborative coding\
+2.  Real-time code synchronization using WebSockets\
+3.  Mock AI autocomplete via `POST /autocomplete`
 
-backend/
-app/
-main.py
-routers/
-services/
-schemas.py
-ws_manager.py
-requirements.txt
+------------------------------------------------------------------------
 
-frontend/ (optional)
-src/
-App.tsx
-Editor.tsx
-store/
-api.ts
+## 2. Directory Structure
 
-## Setup Instructions
+    backend/
+     ├── app/
+     │    ├── main.py
+     │    ├── routers/
+     │    ├── services/
+     │    ├── schemas.py
+     │    ├── ws_manager.py
+     ├── requirements.txt
 
-1. Backend Setup:
-   cd backend
-   python -m venv venv
-   source venv/bin/activate (Windows: venv\Scripts\activate)
-   pip install -r requirements.txt
-   uvicorn app.main:app --reload
+    frontend/ (optional)
+     ├── src/
+     │    ├── App.tsx
+     │    ├── Editor.tsx
+     │    ├── store/
+     │    ├── api.ts
 
-2. Frontend Setup (optional):
-   cd frontend
-   npm install
-   npm start
+------------------------------------------------------------------------
 
-3. setup postgre database credentials
-   - (create .envfile in both folders)
+## 3. Setup Instructions
 
-## Access
+### 3.1 Backend Setup
 
-Backend runs at: http://localhost:8000
-Frontend runs at: http://localhost:3000
+1.  cd backend
+2.  python -m venv venv
+3.  Activate environment:
+    -   Linux/Mac: source venv/bin/activate\
+    -   Windows: venv`\Scripts`{=tex}`\activate`{=tex}
+4.  pip install -r requirements.txt
+5.  uvicorn app.main:app --reload
+
+------------------------------------------------------------------------
+
+### 3.2 Frontend Setup (Optional)
+
+1.  cd frontend
+2.  npm install
+3.  npm start
+
+------------------------------------------------------------------------
+
+## 4. Access URLs
+
+-   Backend: http://localhost:8000\
+-   Frontend: http://localhost:3000
